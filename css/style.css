@@ -42,8 +42,9 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit; font-weight: 400;}
 
 .wrapper {
     font-family: 'Montserrat';
+    max-width: 1920px;
+    min-width: 320px;
 }
-
 .header {
     position: fixed;
     width: 100%;
@@ -169,8 +170,6 @@ body.lock{
 }
 
 .main {
-    backdrop-filter:blur(137.906px);
-
 }
 .opening {
     padding: 50px 0 0 0;
@@ -179,9 +178,8 @@ body.lock{
     background-size: 100% 100%;
 }
 .container {
-    
     max-width: 100%;
-    padding: 0 20px;
+    padding: 0 20px 0 20px;
 }
 .opening__text{
     display: flex;
@@ -253,3 +251,54 @@ body.lock{
     color: #FFFFFF;
     opacity: 0.5;
 }
+
+.work {
+
+}
+.work__title {
+    padding: 40px;
+}
+.work__title__text {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #393939;
+}
+.work__list {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #393939;
+    text-transform: uppercase;
+}
+.work__list__item{
+    padding: 15px 0 15px 0;
+    height: 40px;
+}
+.work__list__item span {
+    position: relative;
+    display: block;
+    margin: 0 0 0 60px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.work__list ul {
+    counter-reset: myCounter;
+}
+.work__list li:nth-child(-n+2):before{
+    margin-top: -12px;
+}
+.work__list li:nth-child(6):before{
+    margin-top: -12px;
+}
+.work__list li:before{
+    counter-increment: myCounter;
+    content: '0' counter(myCounter);
+    color: #393939;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    margin:0px 7px 0px 0px;
+    position: absolute;
+}
+
+    
