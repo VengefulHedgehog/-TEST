@@ -75,7 +75,15 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit; font-weight: 400;}
 .header__logo {
     z-index:5;
 }
-
+.header__logo__name{
+    display:none;
+}
+.header__button{
+    display:none;
+}
+.header__phone{
+    display:none;
+}
 .header__burger {
     width: 35px;
     height: 35px;
@@ -150,7 +158,7 @@ body.lock{
     overflow: hidden;
 }
 
-.header__list {
+.header__menu__list {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,7 +168,7 @@ body.lock{
     color: #FFFFFF;
 }
 
-.header__list li{
+.header__menu__list li{
     margin:0 0 20px 0;
     
 }
@@ -176,8 +184,8 @@ body.lock{
 }
 .opening {
     padding: 50px 0 0 0;
-    background:radial-gradient(199.83% 125.68% at 50% -3.36%, rgba(23, 23, 24, 0) 0%, rgba(23, 23, 24, 0) 65%, rgba(23, 23, 24, 0.773497) 80.79%, #171718 86.68%, rgba(23, 23, 24, 0.13) 95.33%), url(/img/mobile/backgrounds/bg_opening_mobile.jpg) no-repeat;
-
+    background:radial-gradient(199.83% 125.68% at 50% -3.36%, rgba(23, 23, 24, 0) 0%, rgba(23, 23, 24, 0) 65%, rgba(23, 23, 24, 0.773497) 80.79%, #171718 86.68%, rgba(23, 23, 24, 0.13) 95.33%),
+    url(/img/mobile/backgrounds/bg_opening_mobile.jpg) no-repeat;
     background-size: 100% 100%;
 }
 .container {
@@ -209,6 +217,9 @@ body.lock{
     font-size: 21px;
     line-height: 28px;
     color: #FFFFFF;
+}
+.opening__last{
+    display:none;
 }
 .opening__phone{
     display:flex;
@@ -331,7 +342,167 @@ body.lock{
     position: absolute;
 }
 
+.payment {
+    background-color: black;
+}
+.payment__content {
+    background: url(/img/mobile/backgrounds/bg_pay.png) no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%
+}
+.payment__content__phone {
+    display: none;
+}
+.payment__content__phone__img {
+}
+.payment__content__phone__screen1 {
+}
+.payment__content__phone__screen2 {
+}
+.payment__content__phone__screen3 {
+}
+.payment__content__logo {
+    display: none;
+}
+.payment__content__logo__sber {
+}
+.payment__content__logo__yandex {
+}
+.payment__content__logo__robokassa {
+}
+.payment__content__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0 0 40px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) ;
+}
+.payment__content__pay, .payment__content__integration {
+    width: 200px;
+    height: 200px;
+}
+.payment__content__secure {
+    width: 280px;
+    height: 210px;
+}
+.payment__content__text__title {
+    width: 178px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 0 0 30px 0;
+}
+.payment__content__text:first-child{
+    margin-top: 90px;
+}
+.payment__content__text__paragraph {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+}
+.payment__footer {
+    display: none;
+}
+.payment__footer__secure {
+}
+.payment__footer__1c {
+}
+.payment__footer__pay {
+}
 
+.case {
+    background-color: rgba(0, 0, 0, 0.938);
+    padding-top: 120px;
+}
+.case__content{
+    background: url(/img/mobile/backgrounds/bg_case.png) top center no-repeat ;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 100%
+}
+.case__title {
+    text-align: left;
+    font-size: 20.8px;
+    line-height: 25px;
+    font-weight: 400;
+    padding-right: 40%;
+    margin-bottom:30px;
+    color: white;
+}
+.case__site {
+    background: rgba(20, 20, 20, 0.6);
+    backdrop-filter: blur(25.4563px);
+    padding: 17px;
+    border-radius: 4.24272px;
+    margin-bottom: 50px;
+    color: white;
+}
+.case__site:hover{
+    border-bottom: 5.93981px solid #DE9B55;
+}
+.case__site__image {
+    height: 150px;
+    width: 246px;
+}
+.case__site__text {
+}
+.case__site__text__title {
+    font-weight: 500;
+    font-size: 22.0621px;
+    line-height: 26px;
+    margin-bottom: 9px;
+}
+.case__site__text__paragraph {
+    font-weight: 300;
+    font-size: 15.2738px;
+    line-height: 18px;
+    opacity: 0.8;
+}
+.case__application {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(147.62deg, #8D5DCC -128.51%, #55329E 221.38%);
+    box-shadow: 0px 5px 10px rgba(94, 56, 158, 0.35);
+    border-radius: 3px;
+    width: 280px;
+    height: 195px;
+    margin-bottom: 50px;
+}
+.case__application__text {
+    display: flex;
+    align-items: center;
+    padding: 35px 10px 35px;
+}
+.case__application__text p{
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 13px;
+    color: #FFFFFF;
+    margin-left: 15px
+}
+.case__phone__call__button {
+    font-weight: 700;
+    font-size: 13.3398px;
+    line-height: 16px;
+    color: #FFFFFF;
+    border: 2.85853px solid #FFFFFF;
+    border-radius: 4.76421px;
+    width:240px;
+    height: 45px;
+    text-align: center;
+    padding: 13px 0;
+}
 
 @media(min-width: 768px){
     .container{
