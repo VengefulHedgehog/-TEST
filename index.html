@@ -5,7 +5,7 @@
     <title>E-commerce testing</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slick.css"
     <meta charset="UTF-8">  
@@ -13,6 +13,7 @@
     <script src="/js/jquery-3.6.0.min.js"></script>
     <script src="/js/slick.min.js"></script>
     <script src="/js/script.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
     <div class="wrapper">
@@ -219,6 +220,33 @@
                     </div>
                 </div>
             </div>
+            <form class="application">
+                <div class="application__content">
+                    <div class="application__content__text">
+                        <p class="application__content__title">Интернет-магазин, который приносит прибыль</p>
+                        <ul class="application__content__list">
+                            <li>Получите бесплатно</li>
+                            <li>Личная косультация</li>
+                            <li>Стратегия запуска и продвижения</li>
+                            <li>Коммерческое предложение</li>
+                        </ul>
+                        <p class="application__content__paragraph">Оставьте заявку, чтобы узнать, как создать свой Интернет-магазин</p>
+                    </div>
+                    <div class="application__content__input">
+                        <input type="text" placeholder="   Имя" required  class="application__content__input__name">
+                        <input type="text" placeholder="   +7 (000) 000-00-00" required  class="application__content__input__phone">
+                        <input type="text" placeholder="   Расскажите о своей задаче" required  class="application__content__input__tell">
+                        <div class="application__content__input__checkbox">
+                            <input type="checkbox" id="agreement" name="agreement" >
+                            <label for="horns">Нажимая на кнопку "Отправить", я даю согласие на обработку персональных данных.</label>
+                            <div class="g-recaptcha" data-sitekey="6LcxwngfAAAAAPNkj9ayCBza0nmRBUfYcwYzHYFZ"></div>
+                            <div class="application__content__input__button">
+                                <a href="" class="header__button__text">Отправить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 </body>
