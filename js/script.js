@@ -13,5 +13,10 @@ $(document).ready(function(){
 
 const mediaQuery = window.matchMedia('(min-width: 768px)')
 if (mediaQuery.matches) {
-  
 }
+$(function(){
+    $('.client__content__slider').slick({
+        prevArrow: '.client__content__arrow__prev',
+        nextArrow: '.client__content__arrow__next'
+    });
+});
