@@ -6,7 +6,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $('.work__list ul li:nth-child(n)').click(function(event) {
+    $('.work__list ul li').click(function(event) {
         $('.work__list ul li,.work__list__item p').toggleClass('active');        
     });
 });
