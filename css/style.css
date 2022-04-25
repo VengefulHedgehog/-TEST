@@ -191,7 +191,7 @@ body.lock{
 .opening {
     padding: 50px 0 0 0;
     background:radial-gradient(199.83% 125.68% at 50% -3.36%, rgba(23, 23, 24, 0) 0%, rgba(23, 23, 24, 0) 65%, rgba(23, 23, 24, 0.773497) 80.79%, #171718 86.68%, rgba(23, 23, 24, 0.13) 95.33%),
-    url(/img/mobile/backgrounds/bg_opening_mobile.jpg) no-repeat;
+    url(../img/mobile/backgrounds/bg_opening_mobile.jpg) no-repeat;
     background-size: 100% 100%;
 }
 .container {
@@ -309,7 +309,7 @@ body.lock{
 .work__list__item{
     margin: 30px 0 0 0;
     height: 40px;
-    background: url(/img/icons/arrow_down.svg) 100% 5px no-repeat;
+    background: url(../img/icons/arrow_down.svg) 100% 5px no-repeat;
 }
 .work__list ul li.active:nth-child(n){
     padding-bottom: 200px;
@@ -360,7 +360,7 @@ body.lock{
 .payment {
 }
 .payment__content {
-    background: url(/img/mobile/backgrounds/bg_pay.png) no-repeat;
+    background: url(../img/mobile/backgrounds/bg_pay.png) no-repeat;
     background-size: 100%;
     display: flex;
     flex-direction: column;
@@ -437,7 +437,7 @@ body.lock{
     padding-top: 120px;
 }
 .case__content{
-    background: url(/img/mobile/backgrounds/bg_case.png) top center no-repeat ;
+    background: url(../img/mobile/backgrounds/bg_case.png) top center no-repeat ;
     background-size: 100% 100%;
     display: flex;
     flex-direction: column;
@@ -453,6 +453,17 @@ body.lock{
     padding-right: 40%;
     margin-bottom:30px;
     color: white;
+    text-transform: uppercase;
+}
+.case__title__pc{
+    display:none;
+}
+.case__sample{
+    display: flex;
+    flex-direction: column;
+}
+.case__site__image__pc{
+    display:none;
 }
 .case__site {
     background: rgba(20, 20, 20, 0.6);
@@ -468,6 +479,9 @@ body.lock{
 .case__site__image {
     height: 150px;
     width: 246px;
+}
+.case__site__image__pc{
+    display: none;
 }
 .case__site__text {
 }
@@ -567,7 +581,7 @@ body.lock{
 /*-------------------------------application-------------------------------*/
 
 .application {
-    background: url(/img/mobile/backgrounds/bg_application.png)  center center no-repeat;
+    background: url(../img/mobile/backgrounds/bg_application.png)  center center no-repeat;
     background-size: 100% 100%;
     padding: 0  17px;
 }
@@ -594,7 +608,7 @@ body.lock{
 }
 .application__content__list li{
     padding: 0 0 9px 15px;
-    background: url(/img/icons/plus.svg) left 5px no-repeat;
+    background: url(../img/icons/plus.svg) left 5px no-repeat;
 }
 .application__content__list li:first-child{
     font-weight: 500;
@@ -854,7 +868,7 @@ body.lock{
     .opening {
         padding: 50px 0 0 0;
         background:radial-gradient(199.83% 125.68% at 50% -3.36%, rgba(23, 23, 24, 0) 0%, rgba(23, 23, 24, 0) 65%, rgba(23, 23, 24, 0.773497) 80.79%, #171718 86.68%, rgba(23, 23, 24, 0.13) 95.33%),
-        url(/img/background/bg_header.png) no-repeat;
+        url(../img/background/bg_header.png) no-repeat;
         background-size: 100% 100%;
     }
     .container {
@@ -972,7 +986,7 @@ body.lock{
     .work__list__item{
         margin: 30px 0 0 0;
         height: 40px;
-        background: url(/img/icons/arrow_down.svg) 100% 5px no-repeat;
+        background: url(../icons/arrow_down.svg) 100% 5px no-repeat;
     }
     .work__list ul li.active:nth-child(n){
         padding-bottom: 200px;
@@ -1023,7 +1037,7 @@ body.lock{
     .payment {
     }
     .payment__content {
-        background: url(/img/mobile/backgrounds/bg_pay.png) no-repeat;
+        background: url(../img/mobile/backgrounds/bg_pay.png) no-repeat;
         background-size: 100%;
         display: flex;
         flex-direction: column;
@@ -1100,37 +1114,55 @@ body.lock{
         padding-top: 120px;
     }
     .case__content{
-        background: url(/img/mobile/backgrounds/bg_case.png) top center no-repeat ;
-        background-size: 100% 100%;
+        background: url(../img/background/geometry.png) no-repeat, url(../img/background/bg_cases.png) top center no-repeat ;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: start;
         width: 100%
     }
-    .case__title {
-        text-align: left;
-        font-size: 20.8px;
-        line-height: 25px;
+    .case__title{
+        display:none;
+    }
+    .case__title__pc {
+        display: block;
+        margin: 0 auto;
+        font-size: 42px;
+        line-height: 51px;
         font-weight: 400;
-        padding-right: 40%;
-        margin-bottom:30px;
+        padding: 0 0 120px 0;
         color: white;
+        text-transform: uppercase;
+    }
+    .case__sample{
+        display:flex;
+        flex-direction: row;
+        max-width: 90%;
     }
     .case__site {
         background: rgba(20, 20, 20, 0.6);
         backdrop-filter: blur(25.4563px);
         padding: 17px;
         border-radius: 4.24272px;
-        margin-bottom: 50px;
+        margin: 0 30px 0 0;
+        max-height: 515px;
+        max-width: 330px;
         color: white;
+    }
+    .case__site__image{
+        display:none;
+    }
+    .case__site__image__pc{
+        display:block;
+        max-height: 30%;
+        max-width: 246px;
     }
     .case__site:hover{
         border-bottom: 5.93981px solid #DE9B55;
     }
-    .case__site__image {
-        height: 150px;
-        width: 246px;
+    .case__site__image img{
+        height: 367px;
+        width: 290px;
     }
     .case__site__text {
     }
@@ -1150,7 +1182,7 @@ body.lock{
         display: flex;
         flex-direction: column;
         align-items: center;
-        background: url(/img/mobile/backgrounds/bg_case_application.png) 100% 100% no-repeat, linear-gradient(147.62deg, #8D5DCC -128.51%, #55329E 221.38%);
+        background: url(../img/mobile/backgrounds/bg_case_application.png) 100% 100% no-repeat, linear-gradient(147.62deg, #8D5DCC -128.51%, #55329E 221.38%);
         box-shadow: 0px 5px 10px rgba(94, 56, 158, 0.35);
         border-radius: 3px;
         width: 280px;
@@ -1230,7 +1262,7 @@ body.lock{
     /*-------------------------------application-------------------------------*/
     
     .application {
-        background: url(/img/background/bg_application.png)  center center no-repeat;
+        background: url(../img/background/bg_application.png)  center center no-repeat;
         background-size: 100% 100%;
         padding: 0  17px;
     }
@@ -1257,7 +1289,7 @@ body.lock{
     }
     .application__content__list li{
         padding: 0 0 9px 15px;
-        background: url(/img/icons/plus.svg) left 5px no-repeat;
+        background: url(../img/icons/plus.svg) left 5px no-repeat;
     }
     .application__content__list li:first-child{
         font-weight: 500;
